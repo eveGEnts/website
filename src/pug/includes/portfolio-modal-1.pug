@@ -1,0 +1,27 @@
+// Portfolio Modal 1
+#portfolioModal1.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal1', aria-hidden='true')
+    .modal-dialog.modal-xl
+        .modal-content
+            .modal-header.border-0
+                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+            .modal-body.text-center.pb-5
+                .container
+                    .row.justify-content-center
+                        .col-lg-8
+                            // Portfolio Modal - Title
+                            h2.portfolio-modal-title.text-secondary.mb-0 Event Management
+                            // Icon Divider
+                            .divider-custom
+                                .divider-custom-line
+                                .divider-custom-icon
+                                    i.fas.fa-star
+                                .divider-custom-line
+                            // Portfolio Modal - Image
+
+                            // img.img-fluid.rounded.mb-5(src='assets/event-management.png', alt='Event Management', style='max-width: 300px; height: auto;')
+                            // Portfolio Modal - Text
+                            p.mb-4
+                                | Our platform will revolutionize event organization with intuitive scheduling tools, enabling student clubs to create and manage event schedules effortlessly. It will simplify tracking attendance and handling event details, making event planning a seamless experience.
+                            button.btn.btn-outline-primary(data-bs-dismiss='modal')
+                                i.fas.fa-xmark.fa-fw
+                                | Close Window

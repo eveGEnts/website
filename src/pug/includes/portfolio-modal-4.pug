@@ -1,0 +1,26 @@
+// Portfolio Modal 4
+#portfolioModal4.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal4', aria-hidden='true')
+    .modal-dialog.modal-xl
+        .modal-content
+            .modal-header.border-0
+                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+            .modal-body.text-center.pb-5
+                .container
+                    .row.justify-content-center
+                        .col-lg-8
+                            // Portfolio Modal - Title
+                            h2.portfolio-modal-title.text-secondary.mb-0 Ticketing
+                            // Icon Divider
+                            .divider-custom
+                                .divider-custom-line
+                                .divider-custom-icon
+                                    i.fas.fa-ticket
+                                .divider-custom-line
+                            // Portfolio Modal - Image
+                            //img.img-fluid.rounded.mb-5(src='assets/img/portfolio/game.png', alt='...')
+                            // Portfolio Modal - Text
+                            p.mb-4
+                                | Our future ticketing system will simplify ticket sales and distribution. It manages ticket sales, tracks attendee lists, and handles payments securely. With university SSO integration, controlling ticket types and ensuring secure access for students becomes more efficient.
+                            button.btn.btn-outline-primary(data-bs-dismiss='modal')
+                                i.fas.fa-xmark.fa-fw
+                                | Close Window

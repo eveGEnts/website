@@ -1,0 +1,333 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        // meta(name='description', content='')
+        // meta(name='author', content='')
+
+        meta(name='description', content='eveGEnts is a free and open-source software that will become a unified platform for student clubs to manage events, ticketing, approvals, and design with cloud and self-hosting options.')
+        meta(name='author', content='eveGEnts developers; Steven Webb')
+        meta(name='keywords', content='student clubs, event management, ticketing, approvals, graphics design, cloud hosting, self-hosting, mobile app, i18n, eTWIG, open-source event management platform')
+        meta(name='robots', content='index, follow')
+
+        title The eveGEnts Project
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        // Font Awesome icons (free version)
+        script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
+
+        // Google fonts
+        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body#page-top
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top
+            .container
+                a.navbar-brand(href='#page-top')
+                    img(src='assets/eveGEnts.svg', alt='eveGEnts Logo', style='max-width: 250px; height: auto;')
+
+                button.navbar-toggler.text-uppercase.font-weight-bold.bg-primary.text-white.rounded(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    | Menu 
+                    i.fas.fa-bars
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ms-auto
+                        li.nav-item.mx-0.mx-lg-1
+                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#portfolio') Features
+                        li.nav-item.mx-0.mx-lg-1
+                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#about') About
+                        // li.nav-item.mx-0.mx-lg-1
+                        //     a.nav-link.py-3.px-0.px-lg-3.rounded(href='#contact') Contact
+
+        // Masthead
+        header.masthead.bg-primary.text-white.text-center
+            .container.d-flex.align-items-center.flex-column
+
+                // Roundel
+                img.masthead-avatar.mb-5(src='assets/roundel.svg', alt='Roundel')
+
+                // Masthead Heading
+                h1.masthead-heading.mb-0 The eveGEnts Project
+
+                // Icon Divider
+                .divider-custom.divider-light
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-lightbulb
+                    .divider-custom-line
+                // Masthead Subheading
+                p.masthead-subheading.font-weight-light.mb-0 A new project will become an all-in-one, free and open-source event management and ticketing platform for student clubs.
+
+        // Features Section
+        section#portfolio.page-section.portfolio
+            .container
+
+                // Portfolio Section Heading
+                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Features
+
+                // Icon Divider
+                .divider-custom
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-circle-check
+                    .divider-custom-line
+
+                // Portfolio Grid Items
+                .row.justify-content-center
+
+                    // Event Management
+                    .col-md-6.col-lg-4.mb-5
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal1')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-magnifying-glass-plus.fa-3x
+                            img.img-fluid(src='assets/features/event-management.png', alt='Event Management')
+
+                    // Graphics Design
+                    .col-md-6.col-lg-4.mb-5
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal2')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-magnifying-glass-plus.fa-3x
+                            img.img-fluid(src='assets/features/graphics-design.png', alt='Graphics Design')
+
+                    // Approvals
+                    .col-md-6.col-lg-4.mb-5
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal3')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-magnifying-glass-plus.fa-3x
+                            img.img-fluid(src='assets/features/approvals.png', alt='Requests and Approvals')
+
+                    // Ticketing
+                    .col-md-6.col-lg-4.mb-5.mb-lg-0
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal4')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-magnifying-glass-plus.fa-3x
+                            img.img-fluid(src='assets/features/ticketing.png', alt='Ticketing')
+
+                    // Self Host
+                    .col-md-6.col-lg-4.mb-5.mb-md-0
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal5')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-magnifying-glass-plus.fa-3x
+                            img.img-fluid(src='assets/features/self-host.png', alt='Self Host')
+
+                    // FOSS
+                    .col-md-6.col-lg-4
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal6')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-magnifying-glass-plus.fa-3x
+                            img.img-fluid(src='assets/features/FOSS.png', alt='Free and open-source')
+
+        // About Section
+        section#about.page-section.bg-primary.text-white.mb-0
+            .container
+
+                // About Section Heading
+                h2.page-section-heading.text-center.text-uppercase.text-white About
+
+                // Icon Divider
+                .divider-custom.divider-light
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-comments
+                    .divider-custom-line
+
+                // About Section Content
+                .row
+                    .col-lg-6.ms-auto
+                        p.lead
+                            | Student clubs often face the challenge of using multiple platforms to organize events, handle ticketing, and manage approvals. This fragmented approach leads to the duplication of information, wasting time and causing inefficiencies. 
+                        p.lead
+                            | eveGEnts aims to solve these problems by providing a unified platform for event management, graphics design, request and approvals, and ticketing. By integrating these features, student clubs can streamline their workflows, reduce redundancy, and improve overall efficiency. 
+                        p.lead
+                            | Additionally, the platform will offer both cloud and self-hosting options, allowing users to choose the best solution for their needs. Future plans include developing mobile apps for both Android and iOS to provide users with seamless access on the go, and supporting internationalization (i18n) to cater to a diverse user base with multiple languages.
+                    .col-lg-6.me-auto
+                        p.lead
+                            | eveGEnts will be built using a modern tech stack to ensure reliability and scalability. Key technologies include:
+                        ul
+                            li 
+                                strong Frontend:
+                                |  React and Bootstrap for a responsive and user-friendly interface.
+                            li 
+                                strong Backend:
+                                |  REST API built with the Spring Framework and FreeMarker for dynamic content rendering.
+                            li 
+                                strong Database:
+                                |  PostgreSQL for robust data management.
+                        p.lead
+                            | This platform is based on the software called 
+                            a(href="https://github.com/stewebb/eTWIG" target="_blank" style="color:#FFFFFF; font-weight: bold;") eTWIG
+                            | , leveraging its proven capabilities to deliver a comprehensive solution for student clubs. By adopting these technologies, we aim to provide a seamless and efficient experience for all users.
+                
+                // About Section Button
+                .text-center.mt-4
+                    a.btn.btn-xl.btn-outline-light(href='https://github.com/eveGEnts' target="_blank")
+                        i.fab.fa-github.me-2
+                        | GitHub Repository
+        
+        // Contact Section
+        // section#contact.page-section
+        //     .container
+        //         // Contact Section Heading
+        //         h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Contact Me
+        //         // Icon Divider
+        //         .divider-custom
+        //             .divider-custom-line
+        //             .divider-custom-icon
+        //                 i.fas.fa-star
+        //             .divider-custom-line
+        //         // Contact Section Form
+        //         .row.justify-content-center
+        //             .col-lg-8.col-xl-7
+
+        //                 // * * * * * * * * * * * * * * *
+        //                 // * * SB Forms Contact Form * *
+        //                 // * * * * * * * * * * * * * * *
+
+        //                 // This form is pre-integrated with SB Forms.
+        //                 // To make this form functional, sign up at
+        //                 // https://startbootstrap.com/solution/contact-forms
+        //                 // to get an API token!
+
+        //                 form#contactForm(data-sb-form-api-token='API_TOKEN')
+
+        //                     // Name input
+        //                     .form-floating.mb-3
+        //                         input#name.form-control(
+        //                             type='text',
+        //                             placeholder='Enter your name...',
+        //                             data-sb-validations='required'
+        //                         )
+        //                         label(for='name') Full name
+        //                         .invalid-feedback(data-sb-feedback='name:required')
+        //                             | A name is required.
+
+        //                     // Email address input
+        //                     .form-floating.mb-3
+        //                         input#email.form-control(
+        //                             type='email',
+        //                             placeholder='name@example.com',
+        //                             data-sb-validations='required,email'
+        //                         )
+        //                         label(for='email') Email address
+        //                         .invalid-feedback(data-sb-feedback='email:required')
+        //                             | An email is required.
+        //                         .invalid-feedback(data-sb-feedback='email:email')
+        //                             | Email is not valid.
+
+        //                     // Phone number input
+        //                     .form-floating.mb-3
+        //                         input#phone.form-control(
+        //                             type='tel',
+        //                             placeholder='(123) 456-7890',
+        //                             data-sb-validations='required'
+        //                         )
+        //                         label(for='phone') Phone number
+        //                         .invalid-feedback(data-sb-feedback='phone:required')
+        //                             | A phone number is required.
+
+        //                     // Message input
+        //                     .form-floating.mb-3
+        //                         textarea#message.form-control(
+        //                             type='text',
+        //                             placeholder='Enter your message here...',
+        //                             style='height: 10rem;',
+        //                             data-sb-validations='required'
+        //                         )
+        //                         label(for='message') Message
+        //                         .invalid-feedback(data-sb-feedback='message:required')
+        //                             | A message is required.
+
+        //                     // Submit success message
+        //                     //
+        //                     // This is what your users will see when the form
+        //                     // has successfully submitted
+
+        //                     #submitSuccessMessage.d-none
+        //                         .text-center.mb-3
+        //                             .fw-bolder Form submission successful!
+        //                             | To activate this form, sign up at
+        //                             br
+        //                             a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
+
+        //                     // Submit error message
+        //                     //
+        //                     // This is what your users will see when there is
+        //                     // an error submitting the form
+
+        //                     #submitErrorMessage.d-none
+        //                         .text-center.text-danger.mb-3 Error sending message!
+
+        //                     // Submit Button
+        //                     button#submitButton.btn.btn-primary.btn-xl.disabled(type='submit') Send
+
+        // Footer
+        footer.footer.text-center
+            .container
+                .row
+
+                    // Footer Creator
+                    .col-lg-4.mb-5.mb-lg-0
+                        h4.text-uppercase.mb-4 Project Creator
+                        p.lead.mb-0
+                            a(href="https://www.linkedin.com/in/steve-brandy/" target="_blank" style="color:#FFFFFF; font-weight: bold;") Steven Webb
+
+                    // Footer Social Icons
+                    .col-lg-4.mb-5.mb-lg-0
+                        h4.text-uppercase.mb-4 Around the Web
+                        //a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                        //    i.fab.fa-fw.fa-facebook-f
+                        //a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                        //    i.fab.fa-fw.fa-twitter
+                        //a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                        //    i.fab.fa-fw.fa-linkedin-in
+                        //a.btn.btn-outline-light.btn-social.mx-1(href='https://github.com/stewebb/eveGEnts' target="_blank")
+                        //    i.fab.fa-fw.fa-github
+
+                    // Footer About Text
+                    //.col-lg-4
+                    //    h4.text-uppercase.mb-4 About Freelancer
+                    //    p.lead.mb-0
+                    //        | Freelance is a free to use, MIT licensed Bootstrap theme created by 
+                    //        a(href='http://startbootstrap.com') Start Bootstrap
+                    //        | .
+
+        // Copyright Section
+        div.copyright.py-4.text-center.text-white
+            .container
+                small Copyright &copy; eveGEnts 2024
+
+        // Portfolio Modals
+        include includes/portfolio-modal-1.pug
+        include includes/portfolio-modal-2.pug
+        include includes/portfolio-modal-3.pug
+        include includes/portfolio-modal-4.pug
+        include includes/portfolio-modal-5.pug
+        include includes/portfolio-modal-6.pug
+
+        // Bootstrap core JS
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')
+
+        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+        // * *                               SB Forms JS                               * *
+        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
+        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+        // script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
